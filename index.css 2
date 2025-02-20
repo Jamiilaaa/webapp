@@ -1,3 +1,18 @@
+#menu {
+    display: flex;    /* el menú és un contenidor de tipus flex */
+    height: 8vmax;
+}
+#menu {
+    flex: 1;    /* cada botó pretén ocupar tot l'espai disponible */
+    display: flex;    /* contenidor flex on centrar-hi la icona */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #8EC75b;
+    font-size: 5vmax;
+    cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
+}
+
 html { 
     height: -webkit-fill-available;    /* per a dispositius mòbils */
 }
@@ -10,7 +25,7 @@ body {
     min-height: -webkit-fill-available;    
     margin: 0px;    /* elimina tots els marges del document */
     font-family: sans-serif;    /* un tipus de lletra adient per a llocs web */
-    background-color: #FCDEE0;    /* color de fons en format #RRGGBB */
+    background-color: #87d081;    /* color de fons en format #RRGGBB */
 
 #superior {
     display: flex;
@@ -19,7 +34,7 @@ body {
     align-items: center;    /* centra els elements en la direcció perpendicular a la de disposició */
     font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
     color: white;    /* color del text */
-    background-color: #950E17;    /* color de fons */
+    background-color: 97cedb;    /* color de fons */
 }
 
 .seccio {
@@ -31,39 +46,3 @@ body {
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
-}
-
-#menu {
-    height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
-
-
-  #seccio_0 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vmax;
-}
-#credencials {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    font-size: 3vmax;
-    margin: 5vmin;
-}
-#credencials div {    /* els 2 <div> dins de credencials */
-    margin-bottom: 1vmin;
-}
-#credencials input {    /* els 2 quadres de text dins de credencials */
-    max-width: 20vmax;    /* es limita l'espai que ocupen els quadres de text */
-    font-size: 3vmax;
-}
-#botons_sessio {
-    display: flex;
-    align-items: center;
-}
-#botons_sessio button {    /* els 2 botons dins de botons_sessio */
-    font-size: 3vmax;
-    padding: 2vmin;
-    margin: 1vmin;
-}
