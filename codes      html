@@ -1,0 +1,20 @@
+<html>
+       <script>
+       let score=0;
+
+       function marcador ()
+        {
+              //augmenta la variable
+              score = score + 1;
+              if (score%2 == 0) {
+                       alert(score);
+      }
+       </script>
+       <body>
+               <form>
+                      <input type="button" value="Pica" onclick= "marcador()"/>
+               <form>
+        </body>
+</html>
+
+
